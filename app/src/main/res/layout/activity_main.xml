@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:baselineAligned="false"
+        android:layout_marginTop="@dimen/dp_30"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/button_1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/button_2"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:text="@string/button_3"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="wrap_content"
+            android:hint="@string/your_name_goes_here"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:text="@string/submit"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

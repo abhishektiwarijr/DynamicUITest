@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout android:id="@+id/rl_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/button_1" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/button_2" />
+</RelativeLayout>
+    <RelativeLayout android:layout_below="@+id/rl_1"
+        android:gravity="center_horizontal"
+        android:id="@+id/rl_2"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:text="@string/button_3"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_below="@+id/rl_2"
+        android:gravity="center_horizontal"
+        android:id="@+id/rl_3"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="wrap_content"
+            android:hint="@string/your_name_goes_here"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_below="@+id/rl_3"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:text="@string/submit"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>
+</ScrollView>
